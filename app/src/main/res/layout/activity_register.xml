@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Form Register"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txt_title"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/txt_field_username"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avatar"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_avatar"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_username" />
+
+    <TextView
+        android:id="@+id/txt_field_pass"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_username"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/edt_username"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_pass" />
+
+    <TextView
+        android:id="@+id/txt_field_repass"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass"
+        android:layout_marginTop="10dp"
+        android:text="Re Password"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_repass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass"
+        android:inputType="textPassword"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_repass" />
+
+    <TextView
+        android:id="@+id/txt_field_gender"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_field_repass"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rdo_gender"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/edt_repass"
+        android:layout_toRightOf="@id/txt_field_gender">
+
+        <RadioButton
+            android:id="@+id/radioButton_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Female" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txt_field_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdo_gender"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_date"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdo_gender"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_date" />
+
+    <Button
+        android:id="@+id/btn_choose_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdo_gender"
+        android:layout_toRightOf="@id/edt_date"
+        android:text="Date Choose" />
+
+    <TextView
+        android:id="@+id/txt_field_place"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_date"
+        android:layout_marginTop="10dp"
+        android:text="Place"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_date"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_repass" />
+
+    <TextView
+        android:id="@+id/txt_field_image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_place"
+        android:layout_marginTop="10dp"
+        android:text="Image"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_image"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_place"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_date" />
+
+    <TextView
+        android:id="@+id/txt_field_dep"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edt_image"
+        android:layout_marginBottom="10dp"
+        android:text="Dep"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spn_dep"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/edt_image"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txt_field_dep"
+        android:text="Department Choose" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spn_dep"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="REGISTER" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn_register"
+            android:background="@android:color/holo_orange_light"
+            android:text="CANCEL" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
